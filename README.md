@@ -1,2 +1,2 @@
 # first_webpage
-first webpage 
+This is my first webpage made for AGH contest "Zobaczyć Matematyke"
