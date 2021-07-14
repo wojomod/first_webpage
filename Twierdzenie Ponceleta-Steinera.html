@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8" />
+	<title>Konstrukcje klasyczne</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="author" content="Wojciech Możdżeń" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+	<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+	<script>
+ 
+    $(document).ready(function() {
+    var NavY = $('.menu').offset().top;
+      
+    var stickyNav = function(){
+    var ScrollY = $(window).scrollTop();
+           
+    if (ScrollY > NavY) { 
+        $('.menu').addClass('sticky');
+    } else {
+        $('.menu').removeClass('sticky'); 
+    }
+    };
+      
+    stickyNav();
+      
+    $(window).scroll(function() {
+        stickyNav();
+    });
+    });
+     
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	
+	<script src="jquery.scrollTo.min.js"></script>
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link1').click(function() { $.scrollTo($('#1'), 500); });
+			$('#link2').click(function() { $.scrollTo($('#2'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#3'), 500); });
+
+	
+			$('.scrollup').click(function() { $.scrollTo($('.instruction'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>800) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+	
+	
+</head>
+<body>
+
+	<header>
+		
+		<h1 class="logo">Konstrukcje klasyczne</h1>
+		
+		<nav class="menu">
+		
+			<ol class="menu">
+			
+						<li><a href="strona główna.html">Strona główna</a></li>
+						<li><a href="zasady konstrukcji.html">Zasady konstrukcji</a></li>
+						<li><a href="Podstawowe Konstrukcje.html">Podstawowe konstrukcje</a></li>
+						<li><a href="Twierdzenie Ponceleta-Steinera.html">Twierdzenie Ponceleta-Steinera</a></li>
+						<li><a href="Twierdzenie Mohra-Mascheroniego.html">Twierdzenie Mohra-Mascheroniego</a></li>
+						<li><a href="Konstrukcje Wielokątów Foremnych.html">Konstrukcje wielokątów foremnych</a></li>
+						<li><a href="O Stronie.html">O stronie</a></li>
+			</ol>
+			
+		</nav>
+	</header>
+	
+		
+			<div class="content">
+				<a href="#" class="scrollup"></a>
+				<main>	
+					<article>
+						<header>
+					
+						<h1>Twierdzenie Ponceleta-Steinera</h1>
+						<div class="txt">
+							mówi, że jeśli dana konstrukcja jest wykonalna za pomocą cyrkla i linijki, to jest ona wykonalna za pomocą samej linijki, o ile dany jest na płaszczyźnie pewien okrąg wraz ze środkiem. Jest to najsilniejszy rezultat tego typu, przy pomocy samej linijki nie da się wyciągać pierwiastków kwadratowych. Nazwa twierdzenia pochodzi od Jeana Ponceleta, który postawił je jako hipotezę w roku 1822, oraz Jakoba Steinera, który udowodnił je w roku 1833.
+						</div>
+						<div class="instruction">
+							<a href="Instrukcja.html"><h2>Zanim zaczniesz korzystać z animacji zapoznaj sie z instrukcją<h2></a>
+						</div>
+						
+						<nav>
+
+							<h2 style="margin-top:80px;">Spis treści</h2>
+							<ol class="smenu">
+								<li><a id="link1" href="#">Prosta równoległa</a></li>
+								<li><a id="link2" href="#">Prosta prostopadła</a></li>
+								<li><a id="link3" href="#">Kwadrat</a></li>
+							</ol>
+							
+						</nav>
+						
+						</header>
+							<section>
+								<header id="1">
+									<div style="min-height: 50px;"><br><br></div>
+									<h3 >Prosta równoległa</h3>
+								</header>
+								<div class="explanation">
+											<h4>Etapy konstrukcji</h4>
+											<ol>
+												<li>Wyznaczamy dowolne punkty A i B</li>	
+												<li>Rysujemy prostą AB</li>	
+												<li>Rysujemy okrąg pomocniczy o środku w punkcie A a promieniu równemu odcinkowi AB</li>
+												<li>Znajdujemy punkt wspólny tego okręgu i prostej AB (C)</li>
+												<li>Wyznaczamy dowolny punkt D przez który ma przechodzić prosta równoległa do prostej AB</li>	
+												<li>Rysujemy prostą CD</li>
+												<li>Rysujemy prostą BD</li>
+												<li>Wyznaczamy dowolny punkt E leżący na BD</li>	
+												<li>Rysujemy prostą AE</li>
+												<li>Rysujemy prostą CE</li>
+												<li>Znajdujemy punkt wspólny prostych CD i AE (F)</li>
+												<li>Rysujemy prostą BF</li>
+												<li>Znajdujemy punkt wspólny prostych BF i CE (G)</li>
+												<li>Rysujemy prostą GH ,która jest równoległa do prostej AB</li>
+											</ol>
+								</div>
+									<div class="anianimation">
+										<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/vy7dqeuh/width/500/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="500px" style="border:0px;"> 
+										</iframe>
+									</div>
+								<div style="clear:both;"></div>
+							</section>
+							<section>
+								<header id="2">
+									<div style="min-height: 50px;"><br><br></div>
+									<h3 >Prosta prostopadła</h3>
+								</header>
+								<div class="explanation">
+											<h4>Etapy konstrukcji</h4>
+											<ol>
+												<li>Wyznaczamy dowolne punkty A i B</li>	
+												<li>Rysujemy okrąg pomocniczy o środku w punkcie A a promieniu równemu odcinkowi AB</li>
+												<li>Rysujemy prostą AB</li>	
+												<li>Znajdujemy punkt wspólny tego okręgu i prostej AB (C)</li>
+												<li>Wyznaczamy dowolny punkt D na leżący na okręgu AB</li>	
+												<li>Rysujemy prostą CD</li>
+												<li>Rysujemy prostą BD</li>
+												<li>Wyznaczamy dowolny punkt E leżący na CD</li>	
+												<li>Rysujemy prostą AE</li>
+												<li>Znajdujemy punkt wspólny prostych BD i AE (J)</li>
+												<li>Rysujemy prostą CJ</li>
+												<li>Rysujemy prostą BE</li>
+												<li>Znajdujemy punkt wspólny prostych BE i CJ (G)</li>
+												<li>Rysujemy prostą DG</li>
+												<li>Znajdujemy punkt wspólny okręgu AB i prostej DG (H)</li>
+												<li>Rysujemy prostą BH</li>
+												<li>Znajdujemy punkt wspólny prostych BH i CD (I)</li>
+												<li>Rysujemy prostą AI ,która jest prostopadła do prostej AB</li>
+											</ol>
+								</div>
+									<div class="anianimation">
+										<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/fnujtpmt/width/500/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="500px" style="border:0px;"> 
+										</iframe>
+									</div>
+								<div style="clear:both;"></div>
+							</section>
+							<section>
+								<header id="3">
+									<div style="min-height: 50px;"><br><br></div>
+									<h3>Kwadrat</h3>
+								</header>
+								<div class="explanation">
+											<h4>Etapy konstrukcji</h4>
+											<ol>
+												<li>Wyznaczamy dowolne punkty A i B</li>	
+												<li>Rysujemy okrąg pomocniczy o środku w punkcie A a promieniu równemu odcinkowi AB</li>
+												<li>Rysujemy prostą AB</li>	
+												<li>Znajdujemy punkt wspólny tego okręgu i prostej AB (C)</li>
+												<li>Wyznaczamy dowolny punkt D na leżący na okręgu AB</li>	
+												<li>Rysujemy prostą BD</li>
+												<li>Rysujemy prostą CD</li>
+												<li>Wyznaczamy dowolny punkt E leżący na CD</li>	
+												<li>Rysujemy prostą BE</li>
+												<li>Rysujemy prostą AE</li>
+												<li>Znajdujemy punkt wspólny prostych BD i AE (F)</li>
+												<li>Rysujemy prostą CF</li>
+												<li>Znajdujemy punkt wspólny prostych BE i CF (G)</li>
+												<li>Rysujemy prostą DG</li>
+												<li>Znajdujemy punkt wspólny okręgu AB i prostej DG (H)</li>
+												<li>Rysujemy prostą BH</li>
+												<li>Znajdujemy punkt wspólny prostych BH i CD (I)</li>
+												<li>Rysujemy prostą AI</li>
+												<li>Znajdujemy punkty wspólne okręgu AB i prostej AI(J i K)</li>
+												<li>Punkty C , K , B ,J są wierzchołkami kwadratu</li>
+											</ol>
+								</div>
+									<div class="anianimation">
+										<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/c9b8kxdn/width/500/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="500px" style="border:0px;"> 
+										</iframe>
+									</div>
+								<div style="clear:both;"></div>
+							</section>
+					</article>	
+				</main>
+			</div>
+		
+				<div style="clear:both;"></div>
+		
+			</div>
+			
+	<footer>
+		<div class="info">
+			Wszelkie prawa zastrzeżone &copy; 2019 Dziękuję za wizytę!
+		</div>
+	</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8" />
+	<title>Konstrukcje klasyczne</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="author" content="Wojciech Możdżeń" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+	<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+	<script>
+ 
+    $(document).ready(function() {
+    var NavY = $('.menu').offset().top;
+      
+    var stickyNav = function(){
+    var ScrollY = $(window).scrollTop();
+           
+    if (ScrollY > NavY) { 
+        $('.menu').addClass('sticky');
+    } else {
+        $('.menu').removeClass('sticky'); 
+    }
+    };
+      
+    stickyNav();
+      
+    $(window).scroll(function() {
+        stickyNav();
+    });
+    });
+     
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	
+	<script src="jquery.scrollTo.min.js"></script>
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link1').click(function() { $.scrollTo($('#1'), 500); });
+			$('#link2').click(function() { $.scrollTo($('#2'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#3'), 500); });
+			$('#link4').click(function() { $.scrollTo($('#4'), 500); });
+			$('#link5').click(function() { $.scrollTo($('#5'), 500); });
+			$('#link6').click(function() { $.scrollTo($('#6'), 500); });
+			$('#link7').click(function() { $.scrollTo($('#7'), 500); });
+			$('#link8').click(function() { $.scrollTo($('#8'), 500); });
+			$('#link9').click(function() { $.scrollTo($('#9'), 500); });
+			$('#link10').click(function() { $.scrollTo($('#10'), 500); });
+			$('#link11').click(function() { $.scrollTo($('#2'), 500); });
+			$('#link12').click(function() { $.scrollTo($('#3'), 500); });
+	
+			$('.scrollup').click(function() { $.scrollTo($('.instruction'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+	
+	
+</head>
+<body>
+
+	<header>
+		
+		<h1 class="logo">Konstrukcje klasyczne</h1>
+		
+		<nav class="menu">
+		
+			<ol class="menu">
+			
+						<li><a href="strona główna.html">Strona główna</a></li>
+						<li><a href="zasady konstrukcji.html">Zasady konstrukcji</a></li>
+						<li><a href="Podstawowe Konstrukcje.html">Podstawowe konstrukcje</a></li>
+						<li><a href="Twierdzenie Ponceleta-Steinera.html">Twierdzenie Ponceleta-Steinera</a></li>
+						<li><a href="Twierdzenie Mohra-Mascheroniego.html">Twierdzenie Mohra-Mascheroniego</a></li>
+						<li><a href="Konstrukcje Wielokątów Foremnych.html">Konstrukcje wielokątów foremnych</a></li>
+						<li><a href="O Stronie.html">O stronie</a></li>
+			</ol>
+			
+		</nav>
+	</header>
+	
+		
+			<div class="content">
+				<a href="#" class="scrollup"></a>
+				<main>	
+					<article>
+						<header>
+					
+						<h1>Podstawowe konstrukcje</h1>
+						
+						<div class="instruction">
+							<a href="Instrukcja.html"><h2>Zanim zaczniesz korzystać z animacji zapoznaj sie z instrukcją<h2></a>
+						</div>
+						
+						<nav>
+							
+							<h2 style="margin-top:80px;">Spis treści</h2>
+							
+							<ol class="smenu">
+								<li><a id="link1" href="#">Prosta prostopadła</a></li>
+								<li><a id="link2" href="#">Symetralna odcinka</a></li>
+								<li><a id="link3" href="#">Dwusieczna kąta</a></li>
+								<li><a id="link4" href="#">Proste równoległe</a></li>
+								<li><a id="link5" href="#">Kąt przystający do danego kąta</a></li>
+								<li><a id="link6" href="#">Wielokąt przystający do danego wielokąt</a></li>
+								<li><a id="link7" href="#">Styczna do okręgu</a></li>
+								<li><a id="link8" href="#">Okrąg styczny zewnętrznie lub wewnętrznie do danego okręgu</a></li>
+								<li><a id="link9" href="#">Okrąg wpisany w wielokąt wypukły</a></li>
+								<li><a id="link10" href="#">Okrąg opisany na wielokącie wypukłym</a></li>
+							</ol>
+							
+						</nav>
+						
+						</header>
+						<section>
+							<header id="1">
+								<div style="min-height: 50px;"><br><br></div>
+									<h3>Prosta prostopadła</h3>
+							</header>
+								<div class="explanation">
+									<h4>Etapy konstrukcji</h4>
+										<ol>
+											<li>Wyznaczamy dowolne punkty A i B</li>	
+											<li>Rysujemy prostą AB</li>	
+											<li>Rysujemy okrąg o środku w punkcie A o promieniu równemu odcinkowi AB</li>
+											<li>Rysujemy okrąg o środku w punkcie B o promieniu równemu odcinkowi AB</li>
+											<li>Znajdujemy punkty wspólne tych okręgów (C i D)</li>
+											<li>Rysujemy prostą CD</li>
+										</ol>
+								</div>
+								<div class="anianimation">
+									<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/v344a2at/width/500/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="500px" style="border:0px;"> 
+									</iframe>
+								</div>
+								<div style="clear:both;"></div>
+						</section>
+						<section>
+							<header id="2">
+								<div style="min-height: 50px;"><br><br></div>
+									<h3>Symetralna odcinka</h3>
+							</header>
+							<div class="explanation">
+								<h4>Etapy konstrukcji</h4>
+									<ol>
+										<li>Wyznaczamy dowolne punkty A i B</li>	
+										<li>Rysujemy odcinek AB</li>	
+										<li>Rysujemy okrąg o środku w punkcie A o promieniu równemu odcinkowi AB</li>
+										<li>Rysujemy okrąg o środku w punkcie B o promieniu równemu odcinkowi AB</li>
+										<li>Znajdujemy punkty wspólne tych okręgów C i D</li>
+										<li>Rysujemy prostą CD</li>
+										<li>Znajdujemy punkt wspólny prostej CD i odcinka AB (E)</li>
+										<li>Odledłośći AE=EB</li>
+									</ol>
+							</div>
+							<div class="anianimation">
+								<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/qmvc75e6/width/500/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="500px" style="border:0px;"> 
+								</iframe>
+							</div>
+							<div style="clear:both;"></div>
+						</section>
+						<section>
+							<header id="3">
+								<div style="min-height: 50px;"><br><br></div>
+									<h3>Dwusieczna kąta</h3>
+							</header>
+							<div class="explanation">
+								<h4>Etapy konstrukcji</h4>
+									<ol>
+										<li>Wyznaczamy dowolne punkty A,B,C</li>	
+										<li>Rysujemy półprostą AB i AC</li>	
+										<li>Wyznaczamy dowolny punkt D leżący na półprostej AB</li>
+										<li>Rysujemy okrąg o środku w punkcie A o promieniu równemu odcinkowi AD</li>
+										<li>Znajdujemy punkt wspólny tego okręgu i półprostej AC (E)</li>
+										<li>Rysujemy okrąg o środku w punkcie D o promieniu równemu odcinkowi AD</li>
+										<li>Rysujemy okrąg o środku w punkcie E o promieniu równemu odcinkowi AD</li>
+										<li>Znajdujemy punkt wspólny tych okręgów(F)</li>
+										<li>Rysujemy półrostą AF</li>
+									</ol>
+							</div>
+							<div class="anianimation">
+								<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/dcp92tqb/width/500/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="500px" style="border:0px;"> 
+								</iframe>
+							</div>
+							<div style="clear:both;">
+							</div>
+						</section>
+						<section>
+							<header id="4">
+								<div style="min-height: 50px;"><br><br></div>
+									<h3 >Proste równoległe</h3>
+							</header>
+							<div class="explanation">
+								<h4>Etapy konstrukcji</h4>
+									<ol>
+										<li>Wyznaczamy dowolne punkty A i B</li>	
+										<li>Rysujemy prostą AB</li>	
+										<li>Rysujemy okrąg o środku w punkcie A a promieniu równemu odcinkowi AB</li>
+										<li>Rysujemy okrąg o środku w punkcie B a promieniu równemu odcinkowi AB</li>
+										<li>Znajdujemy punkty wspólne tych okręgów C i D</li>
+										<li>Rysujemy prostą CD</li>
+										<li>Wyznaczamy dowolne punkty E i F leżące na CD</li>	
+										<li>Rysujemy okrąg o środku w punkcie F o promieniu równemu odcinkowi EF</li>
+										<li>Rysujemy okrąg o środku w punkcie E o promieniu równemu odcinkowi EF</li>
+										<li>Znajdujemy punkty wspólne tych okręgów G i H</li>
+										<li>Rysujemy prostą GH</li>
+									</ol>
+							</div>
+							<div class="anianimation">
+								<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/scvxjmvu/width/500/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="500px" style="border:0px;"> 
+								</iframe>
+							</div>
+							<div style="clear:both;"></div>
+						</section>
+						<section>
+							<header id="5">
+								<div style="min-height: 50px;"><br><br></div>
+									<h3 >Kąt przystający do danego kąta</h3>
+							</header>
+							<div class="explanation">
+								<h4>Etapy konstrukcji</h4>
+									<ol>
+										<li>Wyznaczamy dowolne punkty A,B,C</li>	
+										<li>Rysujemy półprostą AC i AB twożące kąt</li>	
+										<li>Wyznaczamy dowolne punkty D i E</li>	
+										<li>Rysujemy półprostą DE</li>	
+										<li>Wyznaczamy dowolny punkt F na półprostej AB</li>	
+										<li>Rysujemy okrąg o środku w punkcie A a promieniu równemu odcinkowi AF</li>
+										<li>Rysujemy okrąg o środku w punkcie D a promieniu równemu odcinkowi AF</li>
+										<li>Znajdujemy punkt wspólny tego okręgu i półprostej DE punkt G</li>
+										<li>Znajdujemy punkt wspólny pierwszego okręgu i półprostej AC punkt H</li>
+										<li>Rysujemy okrąg o środku w punkcie F a promieniu równemu odcinkowi FH</li>
+										<li>Rysujemy okrąg o środku w punkcie G a promieniu równemu odcinkowi FH</li>
+										<li>Znajdujemy punkt wspólny tych okręgów I</li>
+										<li>Rysujemy półprostą GI</li>
+									</ol>
+							</div>
+							<div class="anianimation">
+								<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/gnfgrydh/width/500/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="500px" style="border:0px;"> 
+								</iframe>
+							</div>
+							<div style="clear:both;"></div>	
+						</section>
+						<section>
+							<header id="6">
+									<div style="min-height: 50px;"><br><br></div>
+									<h3 >Wielokąt przystający do danego wielokąt</h3>
+								</header>
+								<div class="explanation">
+											<h4>Etapy konstrukcji</h4>
+											<ol>
+												<li>Wyznaczamy dowolne punkty A,B,C</li>	
+												<li>Rysujemy odcinki AB,BC,AC twożące trójkat</li>	
+												<li>Wyznaczamy dowolne punkty A' i D </li>	
+												<li>Rysujemy półprostą A'D</li>	
+												<li>Rysujemy okrąg o środku w punkcie A o promieniu równemu odcinkowi AB</li>
+												<li>Rysujemy okrąg o środku w punkcie A' o promieniu równemu odcinkowi AB</li>
+												<li>Znajdujemy punkt wspólny tego okręgu i prostej A'D punkt B'</li>
+												<li>Rysujemy okrąg o środku w punkcie B o promieniu równemu odcinkowi BC</li>
+												<li>Rysujemy okrąg o środku w punkcie B' o promieniu równemu odcinkowi BC</li>
+												<li>Rysujemy okrąg o środku w punkcie A o promieniu równemu odcinkowi AC</li>
+												<li>Rysujemy okrąg o środku w punkcie A' o promieniu równemu odcinkowi AC</li>
+												<li>Znajdujemy punkt wspólny tych okręgów C'</li>
+												<li>Rysujemy odcinki A'B',B'C',A'C' twożą one trójkat przystajacy do trójkata ABC</li>
+											</ol>
+											
+								</div>
+									<div class="anianimation">
+										<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/btmvbcp6/width/500/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="500px" style="border:0px;"> 
+										</iframe>
+									</div>
+								<div style="clear:both;"></div>
+								<div style="text-align:justify; padding:20px;">
+									Każdy wielokąt można podzielić na trójkąty, więc konstrukcja wielokąta przystającego do
+									danego sprowadza się do konstrukcji odpowiedniej ilości trójkątów rysowanych stopniowo w
+									odpowiednich miejscach.
+								</div>
+							</section>
+							<section>
+								<header id="7">
+									<div style="min-height: 50px;"><br><br></div>
+									<h3 >Styczna do okręgu</h3>
+								</header>
+								<div class="explanation">
+											<h4>Etapy konstrukcji</h4>
+											<ol>
+												<li>Wyznaczamy dowolne punkty A,B,C</li>	
+												<li>Rysujemy okrąg o środku w punkcie A o promieniu równemu odcinkowi AB</li>
+												<li>Rysujemy odcinek AC</li>	
+												<li>Rysujemy okręgi o środkach w punkach A i C o promieniu równemu odcinkowi AC</li>
+												<li>Znajdujemy punkt wspólne tych okręgów D i E</li>
+												<li>Rysujemy prostą DE i znajdujemy jej punkt wspólny z odcinkiem AC (F)</li>
+												<li>Rysujemy okrąg o środku w punkcie F o promieniu równemu odcinkowi FC</li>
+												<li>Znajdujemy punkt wspólne okręgu AB oraz AF (G i H)</li>
+												<li>Rysujemy proste GC i HC ,które są styczne do okręgu AB </li>
+											</ol>
+											
+								</div>
+									<div class="anianimation">
+										<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/kjffkekg/width/500/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="500px" style="border:0px;"> 
+										</iframe>
+									</div>
+								<div style="clear:both;"></div>
+								
+							</section>
+							<section>
+								<header id="8">
+									<div style="min-height: 50px;"><br><br></div>
+									<h3  >Okrąg styczny zewnętrznie lub wewnętrznie do danego okręgu</h3>
+								</header>
+								<div class="explanation">
+											<h4>Etapy konstrukcji</h4>
+											<ol>
+												<li>Wyznaczamy dowolne punkty A i B </li>	
+												<li>Rysujemy odcinek AB który bedzie promieniem szukanych okręgów </li>	
+												<li>Wyznaczamy dowolne punkty C i D </li>	
+												<li>Rysujemy okrąg o środku w punkcie C o promieniu równemu odcinkowi CD</li>
+												<li>Rysujemy prostą CD</li>
+												<li>Rysujemy okrąg o środku w punkcie D o promieniu równemu odcinkowi AB</li>
+												<li>Znajdujemy punkty wspólne tego okręgu i prostej CD (E i F)</li>
+												<li>Rysujemy okrąg o środku w punkcie E o promieniu równemu odcinkowi AB jest on styczny zewnętrznie do okręgu CD</li>
+												<li>Rysujemy okrąg o środku w punkcie F o promieniu równemu odcinkowi AB jest on styczny wewnętrznie do okręgu CD</li>
+											</ol>
+											
+								</div>
+									<div class="anianimation">
+										<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/zwdwhwtx/width/500/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="500px" style="border:0px;"> 
+										</iframe>
+									</div>
+								<div style="clear:both;"></div>
+							</section>
+							<section>
+								<header id="9">
+									<div style="min-height: 50px;"><br><br></div>
+									<h3>Okrąg wpisany w wielokąt wypukły</h3>
+								</header>
+								<div class="txt">
+									Środek okręgu wpisanego leży na przecięciu dwusiecznych.
+									<a id="link12" href="#">Konstrukcja dwusiecznej</a>
+								</div>
+							</section>
+							<section>
+								<header id="10">
+									<div style="min-height: 50px;"><br><br></div>
+									<h3>Okrąg opisany na wielokącie wypukłym</h3>
+								</header>
+								<div class="txt">
+									Środek okręgu opisanego leży na przecięciu symetralnych boków. 
+									<a id="link11" href="#">Konstrukcja symetralnej</a>
+								</div>
+							</section>
+						
+						
+					</article>	
+				</main>
+			</div>
+				<div style="clear:both;"></div>
+
+	<footer>
+		<div class="info">
+			Wszelkie prawa zastrzeżone &copy; 2019 Dziękuję za wizytę!
+		</div>
+	</footer>
+</body>
+
+</html>

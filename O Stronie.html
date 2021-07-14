@@ -1,0 +1,153 @@
+﻿<html>
+<html lang="pl">
+	<meta charset="utf-8" />
+	<title>Konstrukcje klasyczne</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="author" content="Wojciech Możdżeń" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+	<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+	<script>
+ 
+    $(document).ready(function() {
+    var NavY = $('.menu').offset().top;
+      
+    var stickyNav = function(){
+    var ScrollY = $(window).scrollTop();
+           
+    if (ScrollY > NavY) { 
+        $('.menu').addClass('sticky');
+    } else {
+        $('.menu').removeClass('sticky'); 
+    }
+    };
+      
+    stickyNav();
+      
+    $(window).scroll(function() {
+        stickyNav();
+    });
+    });
+     
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	
+	<script src="jquery.scrollTo.min.js"></script>
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link1').click(function() { $.scrollTo($('#1'), 500); });
+			
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+</head>
+<body>
+
+	<header>
+		
+		<h1 class="logo">Konstrukcje klasyczne</h1>
+		
+		<nav class="menu">
+		
+			<ol class="menu">
+			
+						<li><a href="strona główna.html">Strona główna</a></li>
+						<li><a href="zasady konstrukcji.html">Zasady konstrukcji</a></li>
+						<li><a href="Podstawowe Konstrukcje.html">Podstawowe konstrukcje</a></li>
+						<li><a href="Twierdzenie Ponceleta-Steinera.html">Twierdzenie Ponceleta-Steinera</a></li>
+						<li><a href="Twierdzenie Mohra-Mascheroniego.html">Twierdzenie Mohra-Mascheroniego</a></li>
+						<li><a href="Konstrukcje Wielokątów Foremnych.html">Konstrukcje wielokątów foremnych</a></li>
+						<li><a href="O Stronie.html">O stronie</a></li>
+			</ol>
+			
+		</nav>
+	</header>
+	<main>
+	
+		<article>
+		
+			<div class="content">
+			
+					<section class="start">	
+					
+						<header>
+							<h3>O stronie </h3> <br>
+						</header>
+						Strona w całości powstała przy użyciu programów oraz stron niekomercyjnych, w celu udziału w konkursie "Zobaczyć Matematykę" organizowanym przez Akademię Górniczo-Hutniczą im.Stanisława Staszica w Krakowie. Do prawidłowego działania strony internetowej wymagany jest dostęp do internetu.
+					</section>
+					<section class="start">	
+					
+						<header>
+							<h3>Autor</h3> <br>
+						</header>
+						Mam na imię Wojtek. Jestem uczniem I LO im. Eugeniusza Romera w Rabce-Zdroju. Uczęszczam do klasy maturalnej i od niedawna zacząłem się interesować budową stron internetowych. W tej pracy chciałem pokazać jak za pomocą prostych narzędzi można narysować naprawdę ciekawe i niekiedy skomplikowane konstrukcje.
+					</section>
+				
+					<section >	
+						<div class="end">
+							<header>
+								<h3>Programy i technologie</h3> <br>
+							</header>	
+						
+							<ul class="end">
+								<li> HTML</li>
+								<li> CSS</li>
+								<li> <a href="https://jquery.com/" target="_blank">jQuery</a></li>
+								<li> <a href="https://www.geogebra.org/" target="_blank">GeoGebra</a></li>
+								<li> <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a></li>
+								<li> <a href="https://www.gimp.org/" target="_blank">GIMP</a></li>
+							</ul>
+						</div>
+					</section>
+					<section>	
+						<div class="end">
+							<header>
+								<h3>Wykorzystane strony</h3> <br>
+							</header>
+							<ul class="end">
+								<li> <a href="http://samymcyrklem.blogspot.com/" target="_blank">Samym Cyrklem</a></li>
+								<li> <a href="https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna" target="_blank">Wikipedia</a></li>
+								<li> <a href="https://www.toptal.com/designers/subtlepatterns/" target="_blank">Toptal</a></li>
+								<li> <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+								
+								
+							</ul>
+						</div>
+					</section>	
+					<div style="clear:both;"></div>
+					
+			</div>
+			
+		</article>
+	</main>
+
+	<footer>
+		<div class="info">
+			Wszelkie prawa zastrzeżone &copy; 2019 Dziękuję za wizytę!
+		</div>
+	</footer>
+
+</body>
+
+</html>

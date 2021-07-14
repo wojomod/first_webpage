@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8" />
+	<title>Konstrukcje klasyczne</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="author" content="Wojciech Możdżeń" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+	
+	
+	<script>
+ 
+    $(document).ready(function() {
+    var NavY = $('.menu').offset().top;
+      
+    var stickyNav = function(){
+    var ScrollY = $(window).scrollTop();
+           
+    if (ScrollY > NavY) { 
+        $('.menu').addClass('sticky');
+    } else {
+        $('.menu').removeClass('sticky'); 
+    }
+    };
+      
+    stickyNav();
+      
+    $(window).scroll(function() {
+        stickyNav();
+    });
+    });
+     
+	</script>
+	
+	
+</head>
+<body>
+
+	<header>
+		
+		<h1 class="logo">Konstrukcje klasyczne</h1>
+		
+		<nav class="menu">
+		
+			<ol class="menu">
+			
+						<li><a href="strona główna.html">Strona główna</a></li>
+						<li><a href="zasady konstrukcji.html">Zasady konstrukcji</a></li>
+						<li><a href="Podstawowe Konstrukcje.html">Podstawowe konstrukcje</a></li>
+						<li><a href="Twierdzenie Ponceleta-Steinera.html">Twierdzenie Ponceleta-Steinera</a></li>
+						<li><a href="Twierdzenie Mohra-Mascheroniego.html">Twierdzenie Mohra-Mascheroniego</a></li>
+						<li><a href="Konstrukcje Wielokątów Foremnych.html">Konstrukcje wielokątów foremnych</a></li>
+						<li><a href="O Stronie.html">O stronie</a></li>
+						
+			</ol>
+			
+		</nav>
+	</header>
+	<main>
+	
+		<article>
+		
+			<div class="content">
+			
+					<section class="start">	
+					
+						<header>
+							<h3>Konstrukcje platońskie</h3> <br>
+						</header>
+						<div class="author">
+						
+							<figure>
+								<a href="https://pl.wikipedia.org/wiki/Platon" target="_blank"><img src="img/platon.jpg" alt="Platon"></a>
+								<figcaption><a href="https://pl.wikipedia.org/wiki/Platon" target="_blank">Platon</a></figcaption>
+							</figure>
+						
+						</div>
+						<br><br>
+						wspólna nazwa problemów polegających na wyznaczeniu odcinków lub kątów spełniających dane warunki jedynie przy pomocy cyrkla i linijki bez podziałki
+						
+						
+						
+					</section>
+				
+					<section class="start">	
+						<header>
+							<h3>Konstrukcje samą linijką</h3> <br>
+						</header>	
+						
+						<div class="author">
+								<figure>
+									<a href="https://pl.wikipedia.org/wiki/Jean-Victor_Poncelet" target="_blank"><img src="img/Jean-Victor_Poncelet.jpg" alt="Jean-Victor Poncelet"></a>
+									<figcaption><a href="https://pl.wikipedia.org/wiki/Jean-Victor_Poncelet" target="_blank">Jean-Victor Poncelet</a></figcaption>
+								</figure>
+						</div>
+							
+						<div class="author">
+								<figure>
+									<a href="https://pl.wikipedia.org/wiki/Jakob_Steiner " target="_blank"><img src="img/JakobSteiner.jpg" alt="JakobSteiner"><a/>
+									<figcaption><a href="https://pl.wikipedia.org/wiki/Jakob_Steiner " target="_blank">Jakob Steiner</a></figcaption>
+								</figure>
+						</div>
+						<br>
+						<br>
+					Jeśli dana konstrukcja jest wykonalna za pomocą cyrkla i linijki, to jest ona wykonalna za pomocą samej linijki, o ile dany jest na płaszczyźnie pewien okrąg wraz ze środkiem (twierdzenie Ponceleta-Steinera). Hipotezę taką w 1822 roku postawił Jean-Victor Poncelet, a udowodnił ją w 1833 roku Jakob Steiner.												
+					</section>
+					<section class="start">	
+						<header>
+							<h3>Konstrukcje samym cyrklem</h3> <br>
+						</header>
+						<div class="author">
+								<figure>
+									<a href="https://pl.wikipedia.org/wiki/Lorenzo_Mascheroni" target="_blank"><img src="img/Lorenzo_Mascheroni_1.jpg" alt="Lorenzo Mascheroni"></a>
+									<figcaption><a href="https://pl.wikipedia.org/wiki/Lorenzo_Mascheroni" target="_blank">Lorenzo Mascheroni</a></figcaption>
+								</figure>
+						</div>
+						<div class="author">
+								<figure>
+									<a href="https://pl.wikipedia.org/wiki/Georg_Mohr_(matematyk)" target="_blank"><img src="img/Georga Mohra.jpg" alt="Georga Mohra"></a>
+									<figcaption><a href="https://pl.wikipedia.org/wiki/Georg_Mohr_(matematyk)" target="_blank">Georga Mohra</a></figcaption>
+								</figure>
+						</div>
+						<br>
+						<br>
+						Jeżeli dana konstrukcja geometryczna jest wykonalna za pomocą cyrkla i linijki, to jest wykonalna za pomocą samego cyrkla, pod warunkiem, że ograniczymy się do wyznaczania punktów konstrukcji, a pominiemy rysowanie linii (twierdzenie Mohra-Mascheroniego). Wynik ten został opublikowany w roku 1672 przez Georga Mohra, był jednak nieznany aż do roku 1928. Niezależnie od Mohra twierdzenie zostało odkryte przez Lorenzo Mascheroniego w roku 1797.
+							
+							
+					
+					</section>	
+			</div>
+			
+		</article>
+	</main>
+
+	<footer>
+		<div class="info">
+			Wszelkie prawa zastrzeżone &copy; 2019 Dziękuję za wizytę!
+		</div>
+	</footer>
+</body>
+
+</html>
